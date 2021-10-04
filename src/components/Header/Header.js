@@ -6,7 +6,7 @@ import './Header.css';
 const Header = () => {
     return (
         <div>
-             <Navbar bg="primary" variant="dark">
+             <Navbar fixed="top" bg="info" variant="dark">
                 <Container>
                 <Navbar.Brand>E-EDUCATION</Navbar.Brand>
                 <Nav className="mx-auto">
