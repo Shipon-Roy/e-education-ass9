@@ -6,6 +6,7 @@ import img3 from '../../Images/about-img-1.jpg';
 import img4 from '../../Images/about-img-3.jpg';
 import img5 from '../../Images/about-img-4.jpg';
 import img6 from '../../Images/details-img.jpg';
+import img7 from '../../Images/about-img-5.jpg';
 import './Home.css';
 import { Link } from 'react-router-dom';
 
@@ -31,27 +32,36 @@ const Home = () => {
             <Container className="my-5 p-3 shadow">
                 <h1 className="text-center text-info my-3">Services</h1>
                 <Row>
-                    <Col md={4}>
-                    <div className="border p-5 h-100">
-                        <img className="w-75" src={img3} alt="" />
+                    <Col md={3}>
+                    <div className="border h-100">
+                        <img className="w-100" src={img3} alt="" />
                         <div>
                         <h3>Build your media and Public presence</h3>
                         <p>Course Fee:3600</p>
                         </div>
                     </div>
                     </Col>
-                    <Col md={4}>
-                    <div className="border p-5">
-                        <img className="w-75" src={img4} alt="" />
+                    <Col md={3}>
+                    <div className="border">
+                        <img className="w-100" src={img4} alt="" />
                         <div className="w-75">
                         <h3>Become a product Manager learn the skills & job.</h3>
                         <p>Course Fee:4600</p>
                         </div>
                     </div>
                     </Col>
-                    <Col md={4}>
-                    <div className="border p-5">
-                        <img className="w-75" src={img5} alt="" />
+                    <Col md={3}>
+                    <div className="border h-100">
+                        <img className="w-100" src={img5} alt="" />
+                        <div className="w-75">
+                        <h3>Fundamentals of music theory Learn new</h3>
+                        <p>Course Fee:5600</p>
+                        </div>
+                    </div>
+                    </Col>
+                    <Col md={3}>
+                    <div className="border h-100">
+                        <img className="w-100" src={img7} alt="" />
                         <div className="w-75">
                         <h3>Fundamentals of music theory Learn new</h3>
                         <p>Course Fee:5600</p>

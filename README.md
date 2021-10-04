@@ -1,6 +1,6 @@
 # Create a Educational website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://assignments-9-651cab.netlify.app/).
 
 ## Available Scripts
 

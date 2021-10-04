@@ -44,20 +44,24 @@ const CourseDetails = () => {
                         </Col>
                     </Row>
                 </Container>
-                <Container className="my-5 shadow-lg">
+                <Container className="my-5">
                 <Row>
                     <Col md={6}>
-                        <img className="w-75" src={img3} alt="" />
-                        <div className="w-75">
-                        <p>72 Lesson</p>
-                        <h3>Fundamentals of music theory Learn new.</h3>
+                        <div className="shadow">
+                            <img className="w-100" src={img3} alt="" />
+                            <div className="w-75 p-3">
+                            <p>72 Lesson</p>
+                            <h3>Fundamentals of music theory Learn new.</h3>
+                            </div>
                         </div>
                     </Col>
                     <Col md={6}>
-                        <img className="w-75" src={img4} alt="" />
-                        <div className="w-75">
-                        <p>43 Lesson</p>
-                        <h3>Become a product Manager learn the skills & job.</h3>
+                        <div className="shadow">
+                            <img className="w-100" src={img4} alt="" />
+                            <div className="w- p-3">
+                            <p>43 Lesson</p>
+                            <h3>Become a product Manager learn the skills & job.</h3>
+                            </div>
                         </div>
                     </Col>
                 </Row>
