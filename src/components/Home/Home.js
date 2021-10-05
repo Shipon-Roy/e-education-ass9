@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import img1 from '../../Images/banner.jpg';
 import img2 from '../../Images/about-img-1.jpg';
-import img3 from '../../Images/about-img-1.jpg';
-import img4 from '../../Images/about-img-3.jpg';
-import img5 from '../../Images/about-img-4.jpg';
 import img6 from '../../Images/details-img.jpg';
-import img7 from '../../Images/about-img-5.jpg';
 import './Home.css';
 import { Link } from 'react-router-dom';
+import HomeServices from '../HomeServices/HomeServices';
 
 
 const Home = () => {
+    const [services, setServices] = useState([])
+    useEffect( () => {
+        fetch('./services.json')
+        .then(res => res.json())
+        .then(data => setServices(data))
+    }, [])
     return (
         <div className="my-5">
             <Card className="bg-dark text-white">
@@ -33,47 +36,10 @@ const Home = () => {
 
             <Container className="my-5 p-3 shadow">
                 <h1 className="text-center text-info my-3">Services</h1>
-                <Row>
-                    <Col md={3}>
-                    <div className="border h-100">
-                        <img className="w-100" src={img3} alt="" />
-                        <div className="w-75 p-3">
-                        <h3>Build your media and Public presence</h3>
-                        <p>Course Fee:3600</p>
-                        <button className="btn btn-info">Enroll Now</button>
-                        </div>
-                    </div>
-                    </Col>
-                    <Col md={3}>
-                    <div className="border">
-                        <img className="w-100" src={img4} alt="" />
-                        <div className="w-75 p-3">
-                        <h3>Become a product Manager learn the skills & job.</h3>
-                        <p>Course Fee:4600</p>
-                        <button className="btn btn-info">Enroll Now</button>
-                        </div>
-                    </div>
-                    </Col>
-                    <Col md={3}>
-                    <div className="border h-100">
-                        <img className="w-100" src={img5} alt="" />
-                        <div className="w-75 p-3">
-                        <h3>Fundamentals of music theory Learn new</h3>
-                        <p>Course Fee:5600</p>
-                        <button className="btn btn-info">Enroll Now</button>
-                        </div>
-                    </div>
-                    </Col>
-                    <Col md={3}>
-                    <div className="border h-100">
-                        <img className="w-100" src={img7} alt="" />
-                        <div className="w-75 p-3">
-                        <h3>Fundamentals of music theory Learn new</h3>
-                        <p>Course Fee:5600</p>
-                        <button className="btn btn-info">Enroll Now</button>
-                        </div>
-                    </div>
-                    </Col>
+                <Row sm={1} md={4} className="g-5">
+                    {
+                        services.slice(0, 4).map(service => <HomeServices service={service}></HomeServices>)
+                    }
                 </Row>
                 <div className="text-center my-3">
                 <Link to="/services"><button className="btn btn-info">Service More</button></Link>
