@@ -1,8 +1,9 @@
 import React from 'react';
+import '../Apply/Apply.css';
 
 const Error = () => {
     return (
-        <div className="text-danger text-center my-5">
+        <div className="text-danger text-center margin-top mb-5">
             <h1>404</h1>
             <h3>This Page Is Not Found</h3>
         </div>

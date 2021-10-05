@@ -24,7 +24,9 @@ const Home = () => {
                 <h3>Unlimited access to all 60+ instructors.</h3>
                 </Card.Text>
                 <Card.Text>2 passes (with access to all classes) for $240</Card.Text>
-                <button className="btn btn-info">Apply Now</button>
+                <Link to="/apply">
+                    <button className="btn btn-info">Apply Now</button>
+                </Link>
             </Card.ImgOverlay>
             </Card>
 
@@ -35,36 +37,40 @@ const Home = () => {
                     <Col md={3}>
                     <div className="border h-100">
                         <img className="w-100" src={img3} alt="" />
-                        <div>
+                        <div className="w-75 p-3">
                         <h3>Build your media and Public presence</h3>
                         <p>Course Fee:3600</p>
+                        <button className="btn btn-info">Enroll Now</button>
                         </div>
                     </div>
                     </Col>
                     <Col md={3}>
                     <div className="border">
                         <img className="w-100" src={img4} alt="" />
-                        <div className="w-75">
+                        <div className="w-75 p-3">
                         <h3>Become a product Manager learn the skills & job.</h3>
                         <p>Course Fee:4600</p>
+                        <button className="btn btn-info">Enroll Now</button>
                         </div>
                     </div>
                     </Col>
                     <Col md={3}>
                     <div className="border h-100">
                         <img className="w-100" src={img5} alt="" />
-                        <div className="w-75">
+                        <div className="w-75 p-3">
                         <h3>Fundamentals of music theory Learn new</h3>
                         <p>Course Fee:5600</p>
+                        <button className="btn btn-info">Enroll Now</button>
                         </div>
                     </div>
                     </Col>
                     <Col md={3}>
                     <div className="border h-100">
                         <img className="w-100" src={img7} alt="" />
-                        <div className="w-75">
+                        <div className="w-75 p-3">
                         <h3>Fundamentals of music theory Learn new</h3>
                         <p>Course Fee:5600</p>
+                        <button className="btn btn-info">Enroll Now</button>
                         </div>
                     </div>
                     </Col>

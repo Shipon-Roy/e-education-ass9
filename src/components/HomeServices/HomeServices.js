@@ -11,6 +11,7 @@ const HomeServices = (props) => {
                     <div className="w-75 p-3">
                     <h3>{name}</h3>
                     <p>Course Fee: {price}</p>
+                    <button className="btn btn-info">Enroll Now</button>
                     </div>
                 </Card>
             </Col>

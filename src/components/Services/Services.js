@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import HomeServices from '../HomeServices/HomeServices';
+import '../Apply/Apply.css'
 
 
 const Services = () => {
@@ -13,7 +14,7 @@ const Services = () => {
         .then(data => setServices(data))
     }, [])
     return (
-        <div className="my-5">
+        <div className="margin-top">
             <h1 className="text-info text-center my-3">Services</h1>
             <Container className="my-5">
                 <Row sm={1} md={3} className="g-5 mx-3">

@@ -4,10 +4,11 @@ import img from '../../Images/about-img-1.jpg';
 import img2 from '../../Images/about-img-2.png';
 import img3 from '../../Images/about-img-3.jpg';
 import img4 from '../../Images/about-img-4.jpg';
+import '../Apply/Apply.css';
 
 const About = () => {
     return (
-        <div className="my-5">
+        <div className="margin-top">
             <h1 className="text-info text-center my-5">About</h1>
             <Container fluid="md" className="my-5 shadow p-3">
             <Row>

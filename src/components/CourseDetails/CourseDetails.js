@@ -4,12 +4,13 @@ import img from '../../Images/details-img.jpg';
 import img1 from '../../Images/instartor-1.jpg';
 import img2 from '../../Images/teacher-2.jpg';
 import imgt3 from '../../Images/teacher-3.jpg';
-import img3 from '../../Images/about-img-3.jpg';
+import img3 from '../../Images/about-img-1.jpg';
 import img4 from '../../Images/about-img-4.jpg';
+import '../Apply/Apply.css'
 
 const CourseDetails = () => {
     return (
-        <div className="container my-5">
+        <div className="container margin-top">
             <h1 className="text-center text-info my-5">Course Details</h1>
             <div className="my-5">
                 <h1>The business Intelligence analyst Course 2022</h1>
@@ -47,7 +48,7 @@ const CourseDetails = () => {
                 <Container className="my-5">
                 <Row>
                     <Col md={6}>
-                        <div className="shadow">
+                        <div className="shadow h-100">
                             <img className="w-100" src={img3} alt="" />
                             <div className="w-75 p-3">
                             <p>72 Lesson</p>
