@@ -41,17 +41,21 @@ const About = () => {
             <Container className="my-5 shadow-lg">
                 <Row>
                     <Col className="p-5" md={6}>
-                        <img className="w-75" src={img3} alt="" />
-                        <div className="w-75">
-                        <p>72 Lesson</p>
-                        <h3>Fundamentals of music theory Learn new.</h3>
+                        <div data-aos="fade-right">
+                            <img className="w-75" src={img3} alt="" />
+                            <div className="w-75">
+                            <p>72 Lesson</p>
+                            <h3>Fundamentals of music theory Learn new.</h3>
+                            </div>
                         </div>
                     </Col>
                     <Col className="p-5" md={6}>
-                        <img className="w-75" src={img4} alt="" />
-                        <div className="w-75">
-                        <p>43 Lesson</p>
-                        <h3>Become a product Manager learn the skills & job.</h3>
+                        <div data-aos="fade-left">
+                            <img className="w-75" src={img4} alt="" />
+                            <div className="w-75">
+                            <p>43 Lesson</p>
+                            <h3>Become a product Manager learn the skills & job.</h3>
+                            </div>
                         </div>
                     </Col>
                 </Row>

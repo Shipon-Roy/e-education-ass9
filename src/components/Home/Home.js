@@ -6,6 +6,7 @@ import img6 from '../../Images/details-img.jpg';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import HomeServices from '../HomeServices/HomeServices';
+import { Typewriter } from 'react-simple-typewriter';
 
 
 const Home = () => {
@@ -15,16 +16,30 @@ const Home = () => {
         .then(res => res.json())
         .then(data => setServices(data))
     }, [])
+
     return (
         <div className="my-5">
             <Card className="bg-dark text-white">
             <Card.Img className="banner-img" src={img1} alt="Card image" />
             <Card.ImgOverlay className="text-center">
                 <Card.Title className="banner-text"><h1>Launch your <br />
-                Own online yellow-shapelearning
-                <br /> Platform</h1></Card.Title>
+                <h1 className='LoopOnce'>Own online yellow-shapelearning</h1>
+                 Platform</h1></Card.Title>
                 <Card.Text>
-                <h3>Unlimited access to all 60+ instructors.</h3>
+                <h3>Unlimited access to all 60+ instructors.
+                <span style={{ color: 'red', fontWeight: 'bold' }}>
+                    {/* Style will be inherited from the parent element */}
+                    <Typewriter
+                        words={['Eat', 'Sleep', 'Code', 'Repeat!']}
+                        loop={5}
+                        cursor
+                        cursorStyle='_'
+                        typeSpeed={70}
+                        deleteSpeed={50}
+                        delaySpeed={1000}
+                    />
+                </span>
+                </h3>
                 </Card.Text>
                 <Card.Text>2 passes (with access to all classes) for $240</Card.Text>
                 <Link to="/apply">
@@ -46,7 +61,7 @@ const Home = () => {
                 </div>
             </Container>
 
-            <Container fluid="md" className="my-5 shadow p-3">
+            <Container data-aos="zoom-in" fluid="md" className="my-5 shadow p-3">
             <h1 className="text-info text-center my-3">About</h1>
             <Row>
                 <Col md={4}>
@@ -71,7 +86,7 @@ const Home = () => {
             <h1 className="text-center text-info my-3">Course Details</h1>
                 <div className="my-5">
                 <h1>The business Intelligence analyst Course 2022</h1>
-                <img src={img6} alt="" />
+                <img data-aos="zoom-out" src={img6} alt="" />
                 <h3>Course Overview</h3>
                 <p>Only a quid me old mucker squiffy tomfoolery grub cheers ruddy cor blimey guvnor in my flat, up the duff Eaton car boot up the kyver pardon you A bit of how's your father David skive off sloshed, don't get shirty with me chip shop vagabond crikey bugger Queen's English chap. Matie boy nancy boy bite your arm off up the kyver old no biggie fantastic boot, David have it show off show off pick your nose and blow off lost the plot porkies bits and bobs only a quid bugger all mate, absolutely bladdered bamboozled it's your round don't get shirty with me down the pub well. Give us a bell bits and bobs</p>
                 </div>
