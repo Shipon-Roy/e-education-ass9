@@ -41,7 +41,7 @@ const About = () => {
             <Container className="my-5 shadow-lg">
                 <Row>
                     <Col className="p-5" md={6}>
-                        <div data-aos="fade-right">
+                        <div>
                             <img className="w-75" src={img3} alt="" />
                             <div className="w-75">
                             <p>72 Lesson</p>
@@ -50,7 +50,7 @@ const About = () => {
                         </div>
                     </Col>
                     <Col className="p-5" md={6}>
-                        <div data-aos="fade-left">
+                        <div>
                             <img className="w-75" src={img4} alt="" />
                             <div className="w-75">
                             <p>43 Lesson</p>
